@@ -39,7 +39,7 @@ export async function saveToFile (res) {
 }
 
 export async function importFromFile (res) {
-  const ruta = path.resolve('./datos.csv')
+  const ruta = path.resolve('./usuarios.csv')
   const contenido = await fs.readFile(ruta, 'utf-8')
 
   const filas = contenido.split('\n')
