@@ -16,7 +16,7 @@ const server = http.createServer(async (req, res) => {
         break
 
       case '/api/usuarios/export':
-        saveToFile()
+        saveToFile(res)
         break
 
       case '/api/usuarios/import':
@@ -35,4 +35,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(3000, () =>
   console.log('servidor ejecutandoce en http://localhost:3000')
+
 )
